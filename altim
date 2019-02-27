@@ -1,0 +1,6 @@
+#!/bin/bash
+date=$(date +%F_%I-%M-%S)
+echo "Moving previous log..."
+mv /home/pi/Scripts/log.csv /home/pi/Logs/"log $date".csv 
+echo "Running..."
+python /home/pi/Scripts/altim.py
