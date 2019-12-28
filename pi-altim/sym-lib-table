@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Sensor_Pressure)(type Legacy)(uri ${KIPRJMOD}/Sensor_Pressure.lib)(options "")(descr ""))
+  (lib (name Sensor_Motion)(type Legacy)(uri ${KIPRJMOD}/Sensor_Motion.lib)(options "")(descr ""))
+)

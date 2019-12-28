@@ -1,0 +1,284 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5E06AC45
+P 4000 2250
+F 0 "J1" H 4000 3731 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 4000 3640 50  0000 C CNN
+F 2 "" H 4000 2250 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 4000 2250 50  0001 C CNN
+	1    4000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Pressure:BMP280_breakout U1
+U 1 1 5E0722AE
+P 7800 1750
+F 0 "U1" H 7800 2425 50  0000 C CNN
+F 1 "BMP280_breakout" H 7800 2334 50  0000 C CNN
+F 2 "" H 7800 1750 50  0001 C CNN
+F 3 "" H 7800 1750 50  0001 C CNN
+	1    7800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Motion:LIS3DH_breakout U2
+U 1 1 5E07531F
+P 7800 2600
+F 0 "U2" H 7825 3275 50  0000 C CNN
+F 1 "LIS3DH_breakout" H 7825 3184 50  0000 C CNN
+F 2 "" H 7800 2600 50  0001 C CNN
+F 3 "" H 7800 2600 50  0001 C CNN
+	1    7800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Motion:L3GD20H_breakout U3
+U 1 1 5E075F43
+P 7800 3400
+F 0 "U3" H 7800 3427 50  0000 C CNN
+F 1 "L3GD20H_breakout" H 7800 3336 50  0000 C CNN
+F 2 "" H 7800 3400 50  0001 C CNN
+F 3 "" H 7800 3400 50  0001 C CNN
+	1    7800 3400
+	1    0    0    -1  
+$EndComp
+Text Label 4950 1650 0    50   ~ 0
+SDA
+Text Label 4950 1750 0    50   ~ 0
+SCL
+Wire Wire Line
+	4950 1650 4800 1650
+Wire Wire Line
+	4950 1750 4800 1750
+$Comp
+L power:+5V #PWR0101
+U 1 1 5E07800B
+P 3800 850
+F 0 "#PWR0101" H 3800 700 50  0001 C CNN
+F 1 "+5V" H 3815 1023 50  0000 C CNN
+F 2 "" H 3800 850 50  0001 C CNN
+F 3 "" H 3800 850 50  0001 C CNN
+	1    3800 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E078C04
+P 3600 3650
+F 0 "#PWR0102" H 3600 3400 50  0001 C CNN
+F 1 "GND" H 3605 3477 50  0000 C CNN
+F 2 "" H 3600 3650 50  0001 C CNN
+F 3 "" H 3600 3650 50  0001 C CNN
+	1    3600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3550 4200 3550
+Connection ~ 3700 3550
+Wire Wire Line
+	3700 3550 3600 3550
+Connection ~ 3800 3550
+Wire Wire Line
+	3800 3550 3700 3550
+Connection ~ 3900 3550
+Wire Wire Line
+	3900 3550 3800 3550
+Connection ~ 4000 3550
+Wire Wire Line
+	4000 3550 3900 3550
+Connection ~ 4100 3550
+Wire Wire Line
+	4100 3550 4000 3550
+Connection ~ 4200 3550
+Wire Wire Line
+	4200 3550 4100 3550
+Wire Wire Line
+	3600 3550 3600 3650
+Connection ~ 3600 3550
+Wire Wire Line
+	3800 950  3800 850 
+Wire Wire Line
+	3900 950  3800 950 
+Connection ~ 3800 950 
+NoConn ~ 4100 950 
+NoConn ~ 4200 950 
+NoConn ~ 4800 1350
+NoConn ~ 4800 1450
+NoConn ~ 4800 1950
+NoConn ~ 4800 2050
+NoConn ~ 4800 2150
+NoConn ~ 4800 2350
+NoConn ~ 4800 2450
+NoConn ~ 4800 2550
+NoConn ~ 4800 2650
+NoConn ~ 4800 2750
+NoConn ~ 4800 2950
+NoConn ~ 4800 3050
+NoConn ~ 3200 2950
+NoConn ~ 3200 2850
+NoConn ~ 3200 2750
+NoConn ~ 3200 2650
+NoConn ~ 3200 2550
+NoConn ~ 3200 2450
+NoConn ~ 3200 2250
+NoConn ~ 3200 2150
+NoConn ~ 3200 2050
+NoConn ~ 3200 1850
+NoConn ~ 3200 1750
+NoConn ~ 3200 1650
+NoConn ~ 3200 1450
+NoConn ~ 3200 1350
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E07E263
+P 7350 1300
+F 0 "#PWR0103" H 7350 1150 50  0001 C CNN
+F 1 "+5V" V 7365 1428 50  0000 L CNN
+F 2 "" H 7350 1300 50  0001 C CNN
+F 3 "" H 7350 1300 50  0001 C CNN
+	1    7350 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E07F33B
+P 7350 2150
+F 0 "#PWR0104" H 7350 2000 50  0001 C CNN
+F 1 "+5V" V 7365 2278 50  0000 L CNN
+F 2 "" H 7350 2150 50  0001 C CNN
+F 3 "" H 7350 2150 50  0001 C CNN
+	1    7350 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5E07F9C2
+P 7300 2900
+F 0 "#PWR0105" H 7300 2750 50  0001 C CNN
+F 1 "+5V" V 7315 3028 50  0000 L CNN
+F 2 "" H 7300 2900 50  0001 C CNN
+F 3 "" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5E07FC68
+P 7300 3100
+F 0 "#PWR0106" H 7300 2850 50  0001 C CNN
+F 1 "GND" V 7305 2972 50  0000 R CNN
+F 2 "" H 7300 3100 50  0001 C CNN
+F 3 "" H 7300 3100 50  0001 C CNN
+	1    7300 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E080934
+P 7350 2350
+F 0 "#PWR0107" H 7350 2100 50  0001 C CNN
+F 1 "GND" V 7355 2222 50  0000 R CNN
+F 2 "" H 7350 2350 50  0001 C CNN
+F 3 "" H 7350 2350 50  0001 C CNN
+	1    7350 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E08121B
+P 7350 1600
+F 0 "#PWR0108" H 7350 1350 50  0001 C CNN
+F 1 "GND" V 7355 1472 50  0000 R CNN
+F 2 "" H 7350 1600 50  0001 C CNN
+F 3 "" H 7350 1600 50  0001 C CNN
+	1    7350 1600
+	0    1    1    0   
+$EndComp
+NoConn ~ 7450 1450
+NoConn ~ 7450 2250
+NoConn ~ 7450 2450
+NoConn ~ 7450 3000
+NoConn ~ 7450 3200
+NoConn ~ 7800 2750
+NoConn ~ 8150 3200
+NoConn ~ 8200 2450
+NoConn ~ 8150 1600
+Text Label 8250 1300 0    50   ~ 0
+SCL
+Text Label 8300 2150 0    50   ~ 0
+SCL
+Text Label 8250 2900 0    50   ~ 0
+SCL
+Text Label 8250 1500 0    50   ~ 0
+SDA
+Text Label 8300 2250 0    50   ~ 0
+SDA
+Text Label 8250 3000 0    50   ~ 0
+SDA
+Wire Wire Line
+	7300 2900 7450 2900
+Wire Wire Line
+	7450 2150 7350 2150
+Wire Wire Line
+	7350 2350 7450 2350
+Wire Wire Line
+	7350 1600 7450 1600
+Wire Wire Line
+	7350 1300 7450 1300
+Wire Wire Line
+	8250 1300 8150 1300
+Wire Wire Line
+	8300 2150 8200 2150
+Wire Wire Line
+	8250 2900 8150 2900
+Wire Wire Line
+	8300 2250 8200 2250
+NoConn ~ 8200 2350
+NoConn ~ 8150 1400
+Wire Wire Line
+	8150 1500 8250 1500
+Wire Wire Line
+	8250 3000 8150 3000
+NoConn ~ 8150 3100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E087E57
+P 3900 950
+F 0 "#FLG0101" H 3900 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 1123 50  0000 C CNN
+F 2 "" H 3900 950 50  0001 C CNN
+F 3 "~" H 3900 950 50  0001 C CNN
+	1    3900 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 950 
+Wire Wire Line
+	7450 3100 7300 3100
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E08A43F
+P 4300 3550
+F 0 "#FLG0102" H 4300 3625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3723 50  0000 C CNN
+F 2 "" H 4300 3550 50  0001 C CNN
+F 3 "~" H 4300 3550 50  0001 C CNN
+	1    4300 3550
+	-1   0    0    1   
+$EndComp
+Connection ~ 4300 3550
+$EndSCHEMATC
